@@ -165,8 +165,11 @@ folders radio 二选一中选【第一个 create groups for any added folders】
 
 info => URL Types => 点 加号 添加
 
-Identifier 中输入 com.baidu.BaiduSocialShare
+Identifier 中输入 你自己的包名( Bundle identifier )
 URL Schemes 中输入 QQ05FB57A4, NxtcfDZ09zZuCdI2Px2FoUWl, wx712df8473f2a1dbe, tencent100358052, wb319137445
+
+
+修改 plugins 目录下的 Baidushare.m 中的 key 为自己申请的对应的 key
 
 注意吧 URL Schemes 中的 key 替换为自己申请的
 
