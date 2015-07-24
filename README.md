@@ -3,26 +3,6 @@
 ## 将js插件化，不再需要手动引入js文件
 
 ----
-##注意需要手动引入对应平台的js。
-我这里提供一个 js 异步引入 js 的方法,请自行修改为对应路径
-
-```javascript
-function addShareJS(){
-
-    var shareJS = document.createElement("script");
-    if($.os.android){
-        shareJS.src = "./script/Baidushare_Android.js";
-    }
-    if($.os.ios){
-        shareJS.src = "./script/Baidushare_iOS.js";
-    }
-    $("head").append(shareJS);
-    
-}
-```
-
-
-------
 
 ##1、添加插件
 ```cmd
@@ -181,9 +161,7 @@ URL Schemes 中输入 QQ05FB57A4, NxtcfDZ09zZuCdI2Px2FoUWl, wx712df8473f2a1dbe, 
  Build Phases => Compile Sources => Baidushare.m => Complier Flags 栏目中填写 -fno-objc-arc
 
 
-###6. 手动引入 Baidushare_iOS.js 或者用 js 动态插入
-
-###7.在对应位置调用 js
+###6.在对应位置调用 js
 ```javascript
 function shareClick(){
     var title= "分享测试";
