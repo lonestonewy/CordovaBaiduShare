@@ -2,7 +2,9 @@
 <plugin id="net.qdkf.Baidushare" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Baidushare</name>
-
+    <js-module src="www/baidushare.js" name="baidushare">
+        <clobbers target="window.Baidushare" />
+    </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="Baidushare">
@@ -72,7 +74,7 @@
 
     <platform name="ios">
 
-    	<config-file target="config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="Baidushare">
                 <param name="ios-package" value="Baidushare" />
             </feature>
